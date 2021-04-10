@@ -65,25 +65,6 @@ public class SimpleHttpServer {
             baos.write("\r\n".getBytes(StandardCharsets.US_ASCII));
             baos.flush();
 
-          /*  String url = "http://localhost:8989/";
-            URL obj = new URL(url);
-            HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
-
-            connection.setRequestMethod("GET");
-
-
-            BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-
-            String inputLine;
-
-            StringBuffer response = new StringBuffer();
-            while ((inputLine = br.readLine())!=null){
-                response.append(inputLine);
-            }
-
-            br.close();
-
-            System.out.println(response.toString());*/
 
         } else {
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
